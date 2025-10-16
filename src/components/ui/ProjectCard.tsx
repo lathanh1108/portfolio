@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Eye } from 'lucide-react';
 import { useTranslations } from '@/contexts/LanguageContext';
-import Image from 'next/image';
 import { Project } from '@/types';
 import { cn } from '@/lib/utils';
 

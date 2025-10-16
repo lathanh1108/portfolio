@@ -43,17 +43,17 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   // Translation function with nested key support
   const t = (key: string, section?: string): string => {
-    const currentTranslations = translations[locale] as any;
+    const currentTranslations = translations[locale] as Record<string, unknown>;
     
     // Build the full path
     const fullPath = section ? `${section}.${key}` : key;
     const keys = fullPath.split('.');
     
     // Navigate through nested keys
-    let result: any = currentTranslations;
+    let result: unknown = currentTranslations;
     for (const k of keys) {
       if (result && typeof result === 'object' && k in result) {
-        result = result[k];
+        result = (result as Record<string, unknown>)[k];
       } else {
         return key; // Return key if path not found
       }

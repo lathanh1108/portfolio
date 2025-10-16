@@ -22,8 +22,8 @@ export default function Projects() {
   const projectsWithTranslations = useMemo((): Project[] => {
     return PROJECTS_METADATA.map(metadata => ({
       ...metadata,
-      title: t(`list.${metadata.id}.title` as any),
-      description: t(`list.${metadata.id}.description` as any)
+      title: t(`list.${metadata.id}.title`),
+      description: t(`list.${metadata.id}.description`)
     }));
   }, [t]);
 

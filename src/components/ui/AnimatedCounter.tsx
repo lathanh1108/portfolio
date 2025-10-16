@@ -1,19 +1,17 @@
 'use client';
 
-import { motion, useInView, useMotionValue, useSpring } from 'framer-motion';
+import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 
 interface AnimatedCounterProps {
   from: number;
   to: number;
-  duration?: number;
   className?: string;
 }
 
 export default function AnimatedCounter({ 
   from, 
   to, 
-  duration = 2,
   className = ''
 }: AnimatedCounterProps) {
   const ref = useRef(null);
