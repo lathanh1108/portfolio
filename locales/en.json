@@ -1,0 +1,133 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Lã Tất Thành",
+    "title": "Frontend Developer",
+    "description": "I'm a developer with 8 years of experience, mainly in Front-end, and about a year in Back-end with Laravel. Experienced with Salesforce and Shopify, I focus on creating efficient, scalable, and user-friendly web solutions.",
+    "cta": "View My Work"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a dedicated Frontend Developer with 8 years of experience, primarily focused on creating modern, performant, and maintainable web interfaces. I also have around one year of experience in backend development with Laravel.",
+    "passion": "I'm passionate about building user-friendly, high-quality web applications. I enjoy supporting my teammates, learning new technologies when needed, and continuously improving my craft.",
+    "experience_title": "Professional Highlights:",
+    "experience_1": "8+ years of experience in Frontend development",
+    "experience_2": "1 year of experience in Backend development with Laravel",
+    "experience_3": "Experienced with Salesforce (3 years) and Shopify (2 years)",
+    "clean_code": "Clean Code",
+    "clean_code_desc": "Writing maintainable, readable, and performance-optimized code",
+    "design": "UI/UX Oriented",
+    "design_desc": "Focusing on clean layouts and interactive, intuitive interfaces",
+    "performance": "Performance",
+    "performance_desc": "Applying best practices like lazy loading, code splitting, and optimization",
+    "collaboration": "Team Collaboration",
+    "collaboration_desc": "Good listener and supportive teammate, open to feedback and new challenges"
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Technologies I’ve worked with",
+    "frontend": {
+      "title": "Frontend",
+      "items": ["HTML", "CSS/SCSS", "JavaScript", "Vue.js", "Next.js", "Bootstrap", "Vuetify"]
+    },
+    "backend": {
+      "title": "Backend",
+      "items": ["Laravel", "PHP", "MySQL"]
+    },
+    "tools": {
+      "title": "Tools & Platforms",
+      "items": ["Salesforce (SFCC – SiteGenesis/SFRA)", "Shopify (Liquid, metafields, extensions)", "Git", "Bitbucket"]
+    },
+    "design": {
+      "title": "Design",
+      "items": ["Responsive Design", "UI Libraries", "Animation", "Performance Optimization"]
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Some of my recent work",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "all": "All",
+    "featured": "Featured",
+    "frontend": "Frontend",
+    "fullstack": "Full Stack",
+    "showing": "Showing",
+    "projectsCount": "projects",
+    "noProjects": "No projects found",
+    "tryDifferentFilter": "Try selecting a different filter to see more projects",
+    "viewAllProjects": "View All Projects",
+    "list": {
+      "ecommerce-platform": {
+        "title": "E-Commerce Platform",
+        "description": "A modern e-commerce platform built with Next.js, featuring user authentication, product management, shopping cart, and payment integration."
+      },
+      "task-management-app": {
+        "title": "Task Management App",
+        "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features."
+      },
+      "weather-dashboard": {
+        "title": "Weather Dashboard",
+        "description": "A responsive weather dashboard that displays current weather, forecasts, and weather maps using multiple weather APIs."
+      },
+      "social-media-dashboard": {
+        "title": "Social Media Dashboard",
+        "description": "Analytics dashboard for social media management with data visualization, scheduling posts, and performance tracking."
+      },
+      "portfolio-website": {
+        "title": "Portfolio Website",
+        "description": "A responsive portfolio website with modern design, smooth animations, and dark mode support."
+      },
+      "blog-platform": {
+        "title": "Blog Platform",
+        "description": "A full-featured blog platform with content management, SEO optimization, and comment system."
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together",
+    "getInTouch": "Contact Information",
+    "description": "I'm open to new opportunities and interesting projects. If you'd like to collaborate or simply connect, feel free to reach out.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "timezone": "Timezone",
+    "emailValue": "lathanh1108@gmail.com",
+    "phoneValue": "0342166367",
+    "locationValue": "Ho Chi Minh City, Vietnam",
+    "timezoneValue": "GMT+7 (ICT)",
+    "readyToWork": "Ready to Work Together?",
+    "ctaDescription": "Currently available for freelance or full-time opportunities. Let's build something great together.",
+    "startProject": "Start a Project",
+    "followMe": "Follow Me",
+    "connect": "Connect",
+    "availability": "Available for Work",
+    "availabilityStatus": "Open to new projects and full-time positions",
+    "letsCreateSomething": "Let's Create Something Great",
+    "bottomCtaDescription": "Have a project in mind? Let's connect and discuss how to make it a reality.",
+    "sendMessage": "Send Message",
+    "connectLinkedIn": "Connect on LinkedIn"
+  },
+  "footer": {
+    "copyright": "© 2025 Lã Tất Thành. All rights reserved.",
+    "description": "Frontend Developer with 8 years of experience building efficient and scalable web applications. Passionate about clean code and modern web technologies.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "madeWith": "Made with",
+    "madeWithTech": "using Next.js, TypeScript & Tailwind CSS",
+    "backToTop": "Back to top"
+  },
+  "seo": {
+    "title": "Lã Tất Thành - Frontend Developer Portfolio",
+    "description": "Portfolio of Lã Tất Thành, a Frontend Developer with 8 years of experience in web development, specializing in Salesforce, Shopify, Laravel, Vue.js, and Next.js.",
+    "keywords": "Frontend Developer, Salesforce, Shopify, Laravel, Vue.js, Next.js, Web Developer, Vietnam, Portfolio"
+  }
+}

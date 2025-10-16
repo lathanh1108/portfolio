@@ -1,0 +1,121 @@
+{
+  "navigation": {
+    "home": "Trang Chủ",
+    "about": "Giới Thiệu",
+    "skills": "Kỹ Năng",
+    "projects": "Dự Án",
+    "contact": "Liên Hệ"
+  },
+  "hero": {
+    "greeting": "Xin chào, tôi là",
+    "name": "Tên Của Bạn",
+    "title": "Lập Trình Viên Full Stack",
+    "description": "Tôi tạo ra những ứng dụng web đẹp và hiệu quả với các công nghệ hiện đại. Đam mê về code sạch, trải nghiệm người dùng và học hỏi không ngừng.",
+    "cta": "Xem Công Việc"
+  },
+  "about": {
+    "title": "Về Tôi",
+    "description": "Tôi là một lập trình viên full-stack đam mê với chuyên môn về các công nghệ web hiện đại. Tôi yêu thích tạo ra những ứng dụng hiệu quả, có thể mở rộng và thân thiện với người dùng để giải quyết các vấn đề thực tế.",
+    "passion": "Với con mắt tinh tế về chi tiết và cam kết về sự xuất sắc, tôi phấn đấu để cung cấp mã chất lượng cao không chỉ đáp ứng yêu cầu mà còn vượt qua mong đợi. Tôi tin vào việc học hỏi liên tục và cập nhật với những xu hướng mới nhất của ngành.",
+    "experience_title": "Những gì tôi mang lại:",
+    "experience_1": "Hơn 3 năm kinh nghiệm phát triển full-stack",
+    "experience_2": "Kỹ năng giải quyết vấn đề và phân tích mạnh mẽ",
+    "experience_3": "Tư duy hợp tác và thái độ làm việc nhóm",
+    "clean_code": "Code Sạch",
+    "clean_code_desc": "Viết mã có thể bảo trì và dễ đọc theo các thực hành tốt nhất",
+    "design": "Tập Trung UI/UX",
+    "design_desc": "Tạo ra giao diện người dùng đẹp và trực quan với trải nghiệm tuyệt vời",
+    "performance": "Hiệu Suất",
+    "performance_desc": "Tối ưu hóa ứng dụng về tốc độ và hiệu quả trên mọi thiết bị",
+    "collaboration": "Làm Việc Nhóm",
+    "collaboration_desc": "Làm việc hiệu quả với nhóm và giao tiếp rõ ràng với các bên liên quan"
+  },
+  "skills": {
+    "title": "Kỹ Năng & Công Nghệ",
+    "subtitle": "Các công nghệ tôi làm việc cùng",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Công Cụ", 
+    "design": "Thiết Kế"
+  },
+  "projects": {
+    "title": "Dự Án Nổi Bật",
+    "subtitle": "Một số công việc gần đây của tôi",
+    "viewProject": "Xem Dự Án",
+    "viewCode": "Xem Code",
+    "all": "Tất Cả",
+    "featured": "Nổi Bật",
+    "frontend": "Frontend",
+    "fullstack": "Full Stack",
+    "showing": "Hiển thị",
+    "projectsCount": "dự án",
+    "noProjects": "Không tìm thấy dự án",
+    "tryDifferentFilter": "Thử chọn bộ lọc khác để xem thêm dự án",
+    "viewAllProjects": "Xem Tất Cả Dự Án",
+    "list": {
+      "ecommerce-platform": {
+        "title": "Nền Tảng Thương Mại Điện Tử",
+        "description": "Nền tảng thương mại điện tử hiện đại được xây dựng với Next.js, có tính năng xác thực người dùng, quản lý sản phẩm, giỏ hàng và tích hợp thanh toán."
+      },
+      "task-management-app": {
+        "title": "Ứng Dụng Quản Lý Công Việc",
+        "description": "Ứng dụng quản lý công việc cộng tác với cập nhật thời gian thực, chức năng kéo-thả và các tính năng làm việc nhóm."
+      },
+      "weather-dashboard": {
+        "title": "Bảng Điều Khiển Thời Tiết",
+        "description": "Bảng điều khiển thời tiết responsive hiển thị thời tiết hiện tại, dự báo và bản đồ thời tiết sử dụng nhiều API thời tiết."
+      },
+      "social-media-dashboard": {
+        "title": "Bảng Điều Khiển Mạng Xã Hội",
+        "description": "Bảng điều khiển phân tích cho quản lý mạng xã hội với trực quan hóa dữ liệu, lên lịch bài đăng và theo dõi hiệu suất."
+      },
+      "portfolio-website": {
+        "title": "Website Portfolio",
+        "description": "Website portfolio responsive với thiết kế hiện đại, hiệu ứng mượt mà và hỗ trợ chế độ tối."
+      },
+      "blog-platform": {
+        "title": "Nền Tảng Blog",
+        "description": "Nền tảng blog đầy đủ tính năng với quản lý nội dung, tối ưu hóa SEO và hệ thống bình luận."
+      }
+    }
+  },
+  "contact": {
+    "title": "Liên Hệ",
+    "subtitle": "Hãy cùng làm việc",
+    "getInTouch": "Thông Tin Liên Hệ",
+    "description": "Tôi luôn quan tâm đến các cơ hội mới và dự án thú vị. Dù bạn muốn thảo luận về một sự hợp tác tiềm năng hay chỉ đơn giản chào hỏi, hãy thoải mái liên hệ!",
+    "email": "Email",
+    "phone": "Điện Thoại",
+    "location": "Địa Điểm", 
+    "timezone": "Múi Giờ",
+    "emailValue": "lathanh1108@gmail.com",
+    "phoneValue": "0342166367",
+    "locationValue": "Thành phố Hồ Chí Minh, Việt Nam",
+    "timezoneValue": "GMT+7 (ICT)",
+    "readyToWork": "Sẵn Sàng Làm Việc Cùng Nhau?",
+    "ctaDescription": "Hiện tại tôi đang có thể nhận các dự án freelance và cơ hội toàn thời gian. Hãy thảo luận về cách chúng ta có thể hiện thực hóa ý tưởng của bạn.",
+    "startProject": "Bắt Đầu Dự Án",
+    "followMe": "Theo Dõi Tôi",
+    "connect": "Kết Nối",
+    "availability": "Có Thể Làm Việc",
+    "availabilityStatus": "Hiện đang chấp nhận các dự án và cơ hội mới",
+    "letsCreateSomething": "Hãy Tạo Ra Điều Gì Đó Tuyệt Vời",
+    "bottomCtaDescription": "Sẵn sàng bắt đầu dự án tiếp theo của bạn? Tôi rất muốn nghe về ý tưởng của bạn và xem chúng ta có thể làm việc cùng nhau như thế nào để biến chúng thành hiện thực.",
+    "sendMessage": "Gửi Tin Nhắn",
+    "connectLinkedIn": "Kết Nối Trên LinkedIn"
+  },
+  "footer": {
+    "copyright": "© 2024 Tên Của Bạn. Tất cả quyền được bảo lưu.",
+    "description": "Lập trình viên full-stack đam mê tạo ra những ứng dụng web đẹp và hiệu quả. Luôn học hỏi, luôn cải thiện.",
+    "quickLinks": "Liên Kết Nhanh",
+    "contact": "Liên Hệ",
+    "madeWith": "Được tạo với",
+    "madeWithTech": "sử dụng Next.js, TypeScript & Tailwind CSS",
+    "backToTop": "Về đầu trang"
+  },
+  "seo": {
+    "title": "Portfolio - Lập Trình Viên Full Stack",
+    "description": "Portfolio chuyên nghiệp trình bày kỹ năng và dự án phát triển web hiện đại. Có kinh nghiệm với React, Next.js, TypeScript và phát triển full-stack.",
+    "keywords": "Lập Trình Viên Full Stack, React Developer, Next.js, TypeScript, JavaScript, Phát Triển Web, Frontend Developer, Backend Developer, Portfolio"
+  }
+}
