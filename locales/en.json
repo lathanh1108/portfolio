@@ -17,6 +17,8 @@
     "title": "About Me",
     "description": "I'm a dedicated Frontend Developer with 8 years of experience, primarily focused on creating modern, performant, and maintainable web interfaces. I also have around one year of experience in backend development with Laravel.",
     "passion": "I'm passionate about building user-friendly, high-quality web applications. I enjoy supporting my teammates, learning new technologies when needed, and continuously improving my craft.",
+    "profileAlt": "Profile image",
+    "profileImageHint": "Add your profile image to:",
     "experience_title": "Professional Highlights:",
     "experience_1": "8+ years of experience in Frontend development",
     "experience_2": "1 year of experience in Backend development with Laravel",
@@ -33,22 +35,10 @@
   "skills": {
     "title": "Skills & Technologies",
     "subtitle": "Technologies I’ve worked with",
-    "frontend": {
-      "title": "Frontend",
-      "items": ["HTML", "CSS/SCSS", "JavaScript", "Vue.js", "Next.js", "Bootstrap", "Vuetify"]
-    },
-    "backend": {
-      "title": "Backend",
-      "items": ["Laravel", "PHP", "MySQL"]
-    },
-    "tools": {
-      "title": "Tools & Platforms",
-      "items": ["Salesforce (SFCC – SiteGenesis/SFRA)", "Shopify (Liquid, metafields, extensions)", "Git", "Bitbucket"]
-    },
-    "design": {
-      "title": "Design",
-      "items": ["Responsive Design", "UI Libraries", "Animation", "Performance Optimization"]
-    }
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools & Platforms",
+    "design": "Design"
   },
   "projects": {
     "title": "Featured Projects",
@@ -61,6 +51,7 @@
     "fullstack": "Full Stack",
     "showing": "Showing",
     "projectsCount": "projects",
+    "projectImagePlaceholder": "Project Image",
     "noProjects": "No projects found",
     "tryDifferentFilter": "Try selecting a different filter to see more projects",
     "viewAllProjects": "View All Projects",
@@ -104,6 +95,13 @@
     "madeWith": "Made with",
     "madeWithTech": "using Next.js, TypeScript & Tailwind CSS",
     "backToTop": "Back to top"
+  },
+  "header": {
+    "toggleMobileMenu": "Toggle mobile menu"
+  },
+  "languageSwitcher": {
+    "switchToVietnamese": "Switch to Vietnamese",
+    "switchToEnglish": "Switch to English"
   },
   "seo": {
     "title": "Lã Tất Thành - Frontend Developer Portfolio",

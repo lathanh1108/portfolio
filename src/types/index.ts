@@ -82,10 +82,17 @@ export type SectionKeys = 'title' | 'subtitle' | 'description';
 declare global {
   interface IntlMessages {
     navigation: Record<NavigationKeys, string>;
+    header: {
+      toggleMobileMenu: string;
+    };
+    languageSwitcher: {
+      switchToVietnamese: string;
+      switchToEnglish: string;
+    };
     hero: Record<HeroKeys, string>;
-    about: Record<SectionKeys, string>;
+    about: Record<SectionKeys | 'profileAlt' | 'profileImageHint', string>;
     skills: Record<SectionKeys | 'frontend' | 'backend' | 'tools' | 'design', string>;
-    projects: Record<SectionKeys | 'viewProject' | 'viewCode' | 'all' | 'featured' | 'frontend' | 'fullstack' | 'showing' | 'projectsCount' | 'noProjects' | 'tryDifferentFilter' | 'viewAllProjects', string> & {
+    projects: Record<SectionKeys | 'viewProject' | 'viewCode' | 'all' | 'featured' | 'frontend' | 'fullstack' | 'showing' | 'projectsCount' | 'projectImagePlaceholder' | 'noProjects' | 'tryDifferentFilter' | 'viewAllProjects', string> & {
       list: Record<string, {
         title: string;
         description: string;

@@ -2,10 +2,11 @@
 
 import { Globe } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useLanguage, useTranslations } from '@/contexts/LanguageContext';
 
 export default function LanguageSwitcher() {
   const { locale, setLocale } = useLanguage();
+  const t = useTranslations('languageSwitcher');
 
   const switchLanguage = () => {
     const newLocale = locale === 'en' ? 'vi' : 'en';
@@ -20,7 +21,7 @@ export default function LanguageSwitcher() {
         "bg-gray-800 hover:bg-gray-700",
         "text-gray-300 hover:text-white"
       )}
-      aria-label={`Switch to ${locale === 'en' ? 'Vietnamese' : 'English'}`}
+      aria-label={locale === 'en' ? t('switchToVietnamese') : t('switchToEnglish')}
     >
       <Globe className="w-4 h-4" />
       <span className="text-sm font-medium uppercase">

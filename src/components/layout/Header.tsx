@@ -3,6 +3,8 @@
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useTranslations } from '@/contexts/LanguageContext';
+import { BRAND_NAME } from '@/lib/constants';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
 import { layoutContainerClass, scrollToHref } from './layout.utils';
 import Navigation from './Navigation';
@@ -12,6 +14,7 @@ const headerScrolledClass = 'bg-gray-900/90 backdrop-blur-md shadow-lg';
 const headerDefaultClass = 'bg-transparent';
 
 export default function Header() {
+  const t = useTranslations('header');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -52,7 +55,7 @@ export default function Header() {
               }}
               className="text-xl font-bold text-white hover:text-blue-600 transition-colors"
             >
-              Portfolio
+              {BRAND_NAME}
             </button>
           </div>
 
@@ -69,7 +72,7 @@ export default function Header() {
             <button
               onClick={toggleMobileMenu}
               className="md:hidden p-2 rounded-lg text-gray-300 hover:bg-gray-800 transition-colors"
-              aria-label="Toggle mobile menu"
+              aria-label={t('toggleMobileMenu')}
             >
               {isMobileMenuOpen ? (
                 <X className="w-6 h-6" />

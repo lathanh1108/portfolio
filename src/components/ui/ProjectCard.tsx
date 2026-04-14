@@ -42,7 +42,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center">
             <Eye className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-            <p className="text-gray-400 text-sm">Project Image</p>
+            <p className="text-gray-400 text-sm">{t('projectImagePlaceholder')}</p>
           </div>
         </div>
         
@@ -81,7 +81,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         {project.featured && (
           <div className="absolute top-4 right-4">
             <span className="px-2 py-1 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-xs font-medium rounded-full">
-              Featured
+              {t('featured')}
             </span>
           </div>
         )}

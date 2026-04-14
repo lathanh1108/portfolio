@@ -128,7 +128,7 @@ export default function About() {
                   {!imageError ? (
                     <Image 
                       src={PROFILE_IMAGE}
-                      alt="Profile"
+                      alt={t('profileAlt')}
                       fill
                       className="object-cover"
                       sizes="(max-width: 640px) 256px, (max-width: 1024px) 320px, 384px"
@@ -140,7 +140,7 @@ export default function About() {
                       <div className="text-center">
                         <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4" />
                         <p className="text-gray-400 text-sm px-4">
-                          Add your profile image to:<br />
+                          {t('profileImageHint')}<br />
                           <code className="text-blue-400">{PROFILE_IMAGE}</code>
                         </p>
                       </div>

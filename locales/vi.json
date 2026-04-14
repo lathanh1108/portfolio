@@ -17,6 +17,8 @@
     "title": "Về tôi",
     "description": "Tôi là một lập trình viên Frontend tận tâm với 8 năm kinh nghiệm, chuyên tạo ra các giao diện web hiện đại, hiệu suất cao và dễ bảo trì. Tôi cũng có khoảng 1 năm kinh nghiệm phát triển Back-end với Laravel.",
     "passion": "Tôi đam mê xây dựng các ứng dụng web thân thiện, chất lượng cao. Tôi thích hỗ trợ đồng đội, học hỏi công nghệ mới khi cần thiết và không ngừng cải thiện kỹ năng của mình.",
+    "profileAlt": "Ảnh hồ sơ",
+    "profileImageHint": "Thêm ảnh hồ sơ của bạn tại:",
     "experience_title": "Kinh nghiệm nổi bật:",
     "experience_1": "Hơn 8 năm kinh nghiệm trong phát triển Frontend",
     "experience_2": "1 năm kinh nghiệm phát triển Backend với Laravel",
@@ -33,22 +35,10 @@
   "skills": {
     "title": "Kỹ năng & Công nghệ",
     "subtitle": "Những công nghệ tôi đã làm việc cùng",
-    "frontend": {
-      "title": "Frontend",
-      "items": ["HTML", "CSS/SCSS", "JavaScript", "Vue.js", "Next.js", "Bootstrap", "Vuetify"]
-    },
-    "backend": {
-      "title": "Backend",
-      "items": ["Laravel", "PHP", "MySQL"]
-    },
-    "tools": {
-      "title": "Công cụ & Nền tảng",
-      "items": ["Salesforce (SFCC – SiteGenesis/SFRA)", "Shopify (Liquid, metafields, extensions)", "Git", "Bitbucket"]
-    },
-    "design": {
-      "title": "Thiết kế",
-      "items": ["Thiết kế Responsive", "Thư viện UI", "Hiệu ứng Animation", "Tối ưu hiệu suất"]
-    }
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Công cụ & Nền tảng",
+    "design": "Thiết kế"
   },
   "projects": {
     "title": "Dự án tiêu biểu",
@@ -61,6 +51,7 @@
     "fullstack": "Full Stack",
     "showing": "Đang hiển thị",
     "projectsCount": "dự án",
+    "projectImagePlaceholder": "Ảnh dự án",
     "noProjects": "Không tìm thấy dự án nào",
     "tryDifferentFilter": "Hãy thử chọn bộ lọc khác để xem thêm dự án",
     "viewAllProjects": "Xem tất cả dự án",
@@ -104,6 +95,13 @@
     "madeWith": "Được xây dựng bằng",
     "madeWithTech": "Next.js, TypeScript & Tailwind CSS",
     "backToTop": "Về đầu trang"
+  },
+  "header": {
+    "toggleMobileMenu": "Mở/đóng menu di động"
+  },
+  "languageSwitcher": {
+    "switchToVietnamese": "Chuyển sang tiếng Việt",
+    "switchToEnglish": "Chuyển sang tiếng Anh"
   },
   "seo": {
     "title": "Lã Tất Thành - Portfolio Lập trình viên Frontend",

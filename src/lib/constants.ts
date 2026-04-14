@@ -1,19 +1,27 @@
 import { SocialLink, NavigationKeys } from '@/types';
 
+export const BRAND_NAME = 'Portfolio';
+export const CONTACT_EMAIL = 'lathanh1108@gmail.com';
+export const CONTACT_EMAIL_MAILTO = `mailto:${CONTACT_EMAIL}`;
+export const CONTACT_PHONE = '0342166367';
+export const CONTACT_PHONE_E164 = '+84342166367';
+export const CONTACT_PHONE_TEL = `tel:${CONTACT_PHONE_E164}`;
+export const LINKEDIN_PROFILE_URL = 'https://www.linkedin.com/in/lathanh1108';
+
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     name: 'GitHub',
     url: 'https://github.com/lathanh1108',
-    icon: 'Github'
+    icon: 'GitHub'
   },
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/lathanh1108',
-    icon: 'Linkedin'
+    url: LINKEDIN_PROFILE_URL,
+    icon: 'LinkedIn'
   },
   {
     name: 'Email',
-    url: 'mailto:lathanh1108@gmail.com',
+    url: CONTACT_EMAIL_MAILTO,
     icon: 'Mail'
   }
 ];

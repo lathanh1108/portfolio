@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { PerformanceProvider } from '@/components/providers/PerformanceProvider';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import "./globals.css";
+import enTranslations from '../../locales/en.json';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,8 +20,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Portfolio - Full Stack Developer',
-  description: 'Professional portfolio showcasing modern web development skills and projects. Experienced in React, Next.js, TypeScript, and full-stack development.',
+  title: enTranslations.seo.title,
+  description: enTranslations.seo.description,
 };
 
 export default function RootLayout({
