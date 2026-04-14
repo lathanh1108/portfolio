@@ -120,10 +120,10 @@ export default function Footer() {
               <div className="space-y-2 text-gray-400">
                 <p>Ho Chi Minh City, Vietnam</p>
                 <a 
-                  href="mailto:your.email@example.com"
+                  href="mailto:lathanh1108@gmail.com"
                   className="hover:text-white transition-colors duration-200 block"
                 >
-                  your.email@example.com
+                  lathanh1108@gmail.com
                 </a>
                 <p>GMT+7 (ICT)</p>
               </div>

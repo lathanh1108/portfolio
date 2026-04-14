@@ -65,29 +65,9 @@
     "tryDifferentFilter": "Hãy thử chọn bộ lọc khác để xem thêm dự án",
     "viewAllProjects": "Xem tất cả dự án",
     "list": {
-      "ecommerce-platform": {
-        "title": "Nền tảng thương mại điện tử",
-        "description": "Một nền tảng thương mại điện tử hiện đại được xây dựng bằng Next.js, bao gồm đăng nhập người dùng, quản lý sản phẩm, giỏ hàng và tích hợp thanh toán."
-      },
-      "task-management-app": {
-        "title": "Ứng dụng quản lý công việc",
-        "description": "Ứng dụng cộng tác quản lý công việc với cập nhật thời gian thực, kéo thả nhiệm vụ và tính năng làm việc nhóm."
-      },
-      "weather-dashboard": {
-        "title": "Bảng điều khiển thời tiết",
-        "description": "Giao diện hiển thị thời tiết hiện tại, dự báo và bản đồ thời tiết sử dụng nhiều API khác nhau, tối ưu cho mọi thiết bị."
-      },
-      "social-media-dashboard": {
-        "title": "Bảng điều khiển mạng xã hội",
-        "description": "Bảng phân tích dữ liệu cho quản lý mạng xã hội, bao gồm biểu đồ trực quan, lên lịch bài đăng và theo dõi hiệu suất."
-      },
       "portfolio-website": {
         "title": "Trang portfolio cá nhân",
         "description": "Website giới thiệu cá nhân với thiết kế hiện đại, hoạt ảnh mượt mà và hỗ trợ chế độ tối (dark mode)."
-      },
-      "blog-platform": {
-        "title": "Nền tảng blog",
-        "description": "Nền tảng blog đầy đủ tính năng với hệ thống quản lý nội dung, tối ưu SEO và phần bình luận."
       }
     }
   },

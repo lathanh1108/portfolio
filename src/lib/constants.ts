@@ -3,17 +3,17 @@ import { SocialLink, NavigationKeys } from '@/types';
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     name: 'GitHub',
-    url: 'https://github.com',
+    url: 'https://github.com/lathanh1108',
     icon: 'Github'
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com',
+    url: 'https://www.linkedin.com/in/lathanh1108',
     icon: 'Linkedin'
   },
   {
     name: 'Email',
-    url: 'mailto:your.email@example.com',
+    url: 'mailto:lathanh1108@gmail.com',
     icon: 'Mail'
   }
 ];
