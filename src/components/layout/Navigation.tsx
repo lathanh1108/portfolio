@@ -1,9 +1,20 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useTranslations } from '@/contexts/LanguageContext';
 import { NAVIGATION_ITEMS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
-import { useState, useEffect } from 'react';
+import { scrollToHref, sectionIdFromHref } from './layout.utils';
+
+const desktopContainerClass = 'flex items-center space-x-8';
+const mobileContainerClass = 'flex flex-col space-y-4';
+const navItemBaseClass = 'relative px-3 py-2 text-sm font-medium transition-all duration-200';
+const navItemHoverClass = 'hover:text-blue-600';
+const navItemActiveClass = 'text-blue-600';
+const navItemInactiveClass = 'text-gray-300';
+const navItemMobileClass = 'text-left text-lg py-3';
+
+const navigationSections = NAVIGATION_ITEMS.map((item) => sectionIdFromHref(item.href));
 
 interface NavigationProps {
   className?: string;
@@ -17,10 +28,9 @@ export default function Navigation({ className, isMobile = false, onItemClick }:
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = NAVIGATION_ITEMS.map(item => item.href.substring(1));
       const scrollPosition = window.scrollY + 100;
 
-      for (const section of sections) {
+      for (const section of navigationSections) {
         const element = document.getElementById(section);
         if (element) {
           const { offsetTop, offsetHeight } = element;
@@ -37,38 +47,24 @@ export default function Navigation({ className, isMobile = false, onItemClick }:
   }, []);
 
   const handleClick = (href: string) => {
-    const targetId = href.substring(1);
-    const element = document.getElementById(targetId);
-    
-    if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-    
+    scrollToHref(href);
     onItemClick?.();
   };
 
   return (
-    <nav className={cn(
-      isMobile ? "flex flex-col space-y-4" : "flex items-center space-x-8",
-      className
-    )}>
+    <nav className={cn(isMobile ? mobileContainerClass : desktopContainerClass, className)}>
       {NAVIGATION_ITEMS.map((item) => {
-        const isActive = activeSection === item.href.substring(1);
+        const isActive = activeSection === sectionIdFromHref(item.href);
         
         return (
           <button
             key={item.href}
             onClick={() => handleClick(item.href)}
             className={cn(
-              "relative px-3 py-2 text-sm font-medium transition-all duration-200",
-              "hover:text-blue-600",
-              isActive 
-                ? "text-blue-600" 
-                : "text-gray-300",
-              isMobile && "text-left text-lg py-3"
+              navItemBaseClass,
+              navItemHoverClass,
+              isActive ? navItemActiveClass : navItemInactiveClass,
+              isMobile && navItemMobileClass
             )}
           >
             {t(item.label as keyof IntlMessages['navigation'])}

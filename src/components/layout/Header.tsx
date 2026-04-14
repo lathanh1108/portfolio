@@ -1,10 +1,15 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import Navigation from './Navigation';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
+import { layoutContainerClass, scrollToHref } from './layout.utils';
+import Navigation from './Navigation';
+
+const headerBaseClass = 'fixed top-0 left-0 right-0 z-50 transition-all duration-300';
+const headerScrolledClass = 'bg-gray-900/90 backdrop-blur-md shadow-lg';
+const headerDefaultClass = 'bg-transparent';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,12 +20,18 @@ export default function Header() {
       setIsScrolled(window.scrollY > 50);
     };
 
+    handleScroll();
+    const frameId = window.requestAnimationFrame(handleScroll);
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.cancelAnimationFrame(frameId);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen((prev) => !prev);
   };
 
   const closeMobileMenu = () => {
@@ -28,21 +39,16 @@ export default function Header() {
   };
 
   return (
-    <header className={cn(
-      "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-      isScrolled 
-        ? "bg-gray-900/90 backdrop-blur-md shadow-lg" 
-        : "bg-transparent"
-    )}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header
+      className={cn(headerBaseClass, isScrolled ? headerScrolledClass : headerDefaultClass)}
+    >
+      <div className={layoutContainerClass}>
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <button
               onClick={() => {
-                document.getElementById('home')?.scrollIntoView({ 
-                  behavior: 'smooth' 
-                });
+                scrollToHref('#home');
               }}
               className="text-xl font-bold text-white hover:text-blue-600 transition-colors"
             >
@@ -79,7 +85,7 @@ export default function Header() {
           <div className="md:hidden border-t border-gray-700">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-gray-900">
               <Navigation 
-                isMobile={true} 
+                isMobile
                 onItemClick={closeMobileMenu}
                 className="py-4"
               />

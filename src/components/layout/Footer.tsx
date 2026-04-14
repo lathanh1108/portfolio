@@ -1,9 +1,10 @@
 'use client';
 
-import { useTranslations } from '@/contexts/LanguageContext';
 import { motion } from 'framer-motion';
 import { ArrowUp, Heart } from 'lucide-react';
+import { useTranslations } from '@/contexts/LanguageContext';
 import { SOCIAL_LINKS, NAVIGATION_ITEMS } from '@/lib/constants';
+import { layoutContainerClass, scrollToHref } from './layout.utils';
 
 const iconMap = {
   Github: () => (
@@ -31,20 +32,9 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const scrollToSection = (href: string) => {
-    const targetId = href.substring(1);
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  };
-
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className={`${layoutContainerClass} py-12`}>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {/* Brand Section */}
           <div className="md:col-span-1 lg:col-span-2">
@@ -71,6 +61,7 @@ export default function Footer() {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
+                      suppressHydrationWarning
                       className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-200"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
@@ -97,7 +88,7 @@ export default function Footer() {
                 {NAVIGATION_ITEMS.map((item) => (
                   <li key={item.href}>
                     <button
-                      onClick={() => scrollToSection(item.href)}
+                      onClick={() => scrollToHref(item.href)}
                       className="text-gray-400 hover:text-white transition-colors duration-200 text-left"
                     >
                       {navT(item.label as keyof IntlMessages['navigation'])}
@@ -121,6 +112,7 @@ export default function Footer() {
                 <p>Ho Chi Minh City, Vietnam</p>
                 <a 
                   href="mailto:lathanh1108@gmail.com"
+                  suppressHydrationWarning
                   className="hover:text-white transition-colors duration-200 block"
                 >
                   lathanh1108@gmail.com
