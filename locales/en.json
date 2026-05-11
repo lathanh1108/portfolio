@@ -7,20 +7,12 @@
     "projects": "Projects",
     "contact": "Contact"
   },
-  "hero": {
-    "greeting": "Hello, I'm",
-    "name": "Lã Tất Thành",
-    "title": "Frontend Developer",
-    "description": "I am a Front-end Developer with over 8 years of experience in software development, specializing in E-commerce solutions. I have more than 4 years of hands-on experience working with Salesforce SFRA and Shopify, focusing on building modern, high-performance, and user-friendly interfaces. I also have experience with modern Front-end technologies such as React.js and Next.js. I am passionate about developing scalable and reliable products that deliver real business value.",
-    "cta": "View My Work"
-  },
   "about": {
-    "title": "About Me",
     "description": "I'm a dedicated Frontend Developer with 8 years of experience, primarily focused on creating modern, performant, and maintainable web interfaces. I have a strong background in E-commerce development, with over 4 years of experience working extensively with Salesforce SFRA and Shopify. My expertise includes building scalable architectures, optimizing performance, and delivering seamless user experiences on these platforms.",
     "passion": "I'm passionate about building user-friendly, high-quality web applications. I enjoy supporting my teammates, learning new technologies when needed, and continuously improving my craft.",
     "profileAlt": "Profile image",
     "profileImageHint": "Add your profile image to:",
-    "experience_title": "Professional Highlights:",
+    "experience_title": "Professional Highlights",
     "experience_1": "8+ years of experience in Frontend development",
     "experience_2": "1 year of experience in Backend development with Laravel",
     "experience_3": "Experienced with Salesforce (3 years) and Shopify (2 years)",
@@ -46,20 +38,11 @@
     "subtitle": "Some of my recent work",
     "viewProject": "View Project",
     "viewCode": "View Code",
-    "all": "All",
     "featured": "Featured",
-    "frontend": "Frontend",
-    "fullstack": "Full Stack",
-    "showing": "Showing",
-    "projectsCount": "projects",
-    "projectImagePlaceholder": "Project Image",
-    "noProjects": "No projects found",
-    "tryDifferentFilter": "Try selecting a different filter to see more projects",
-    "viewAllProjects": "View All Projects",
     "list": {
       "portfolio-website": {
         "title": "Portfolio Website",
-        "description": "A responsive portfolio website with modern design, smooth animations, and dark mode support."
+        "description": "A responsive portfolio website with modern design and smooth animations."
       }
     }
   },

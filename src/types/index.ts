@@ -41,13 +41,6 @@ export interface LocaleContent {
     projects: string;
     contact: string;
   };
-  hero: {
-    greeting: string;
-    name: string;
-    title: string;
-    description: string;
-    cta: string;
-  };
   about: {
     title: string;
     description: string;
@@ -75,7 +68,6 @@ export type Locale = 'en' | 'vi';
 
 // Type for translation keys
 export type NavigationKeys = 'home' | 'about' | 'skills' | 'experience' | 'projects' | 'contact';
-export type HeroKeys = 'greeting' | 'name' | 'title' | 'description' | 'cta';
 export type SectionKeys = 'title' | 'subtitle' | 'description';
 
 // Global type augmentation for next-intl
@@ -89,7 +81,6 @@ declare global {
       switchToVietnamese: string;
       switchToEnglish: string;
     };
-    hero: Record<HeroKeys, string>;
     about: Record<SectionKeys | 'profileAlt' | 'profileImageHint', string>;
     skills: Record<SectionKeys | 'frontend' | 'backend' | 'tools' | 'design', string>;
     projects: Record<SectionKeys | 'viewProject' | 'viewCode' | 'all' | 'featured' | 'frontend' | 'fullstack' | 'showing' | 'projectsCount' | 'projectImagePlaceholder' | 'noProjects' | 'tryDifferentFilter' | 'viewAllProjects', string> & {

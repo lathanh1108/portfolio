@@ -1,6 +1,8 @@
 import { SocialLink, NavigationKeys } from '@/types';
 
 export const BRAND_NAME = 'Portfolio';
+export const PROFILE_NAME = 'Lã Tất Thành';
+export const PROFILE_JOB_TITLE = 'Frontend Developer';
 export const CONTACT_EMAIL = 'lathanh1108@gmail.com';
 export const CONTACT_EMAIL_MAILTO = `mailto:${CONTACT_EMAIL}`;
 export const CONTACT_PHONE = '0342166367';

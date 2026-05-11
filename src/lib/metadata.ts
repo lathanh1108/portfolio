@@ -5,6 +5,8 @@ import {
   CONTACT_EMAIL,
   CONTACT_PHONE_E164,
   LINKEDIN_PROFILE_URL,
+  PROFILE_JOB_TITLE,
+  PROFILE_NAME,
   SOCIAL_LINKS
 } from './constants';
 
@@ -66,11 +68,11 @@ export function generateStructuredData(locale: 'en' | 'vi') {
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    'name': content.hero.name,
+    'name': PROFILE_NAME,
     'url': baseUrl,
     'image': `${baseUrl}/profile.jpg`,
     'sameAs': socialProfiles.length > 0 ? socialProfiles : [LINKEDIN_PROFILE_URL],
-    'jobTitle': content.hero.title,
+    'jobTitle': PROFILE_JOB_TITLE,
     'worksFor': {
       '@type': 'Organization',
       'name': 'Freelance'
