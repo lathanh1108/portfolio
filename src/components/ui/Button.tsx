@@ -31,6 +31,10 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <motion.button
         ref={ref}
+        data-component="Button"
+        data-testid="button"
+        data-variant={variant}
+        data-size={size}
         className={cn(
           baseClasses,
           variants[variant],

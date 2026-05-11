@@ -52,13 +52,17 @@ export default function Navigation({ className, isMobile = false, onItemClick }:
   };
 
   return (
-    <nav className={cn(isMobile ? mobileContainerClass : desktopContainerClass, className)}>
+    <nav data-component="Navigation" className={cn(isMobile ? mobileContainerClass : desktopContainerClass, className)}>
       {NAVIGATION_ITEMS.map((item) => {
         const isActive = activeSection === sectionIdFromHref(item.href);
+        const sectionId = sectionIdFromHref(item.href);
         
         return (
           <button
             key={item.href}
+            data-testid={`nav-button-${sectionId}`}
+            data-section={sectionId}
+            data-active={isActive}
             onClick={() => handleClick(item.href)}
             className={cn(
               navItemBaseClass,

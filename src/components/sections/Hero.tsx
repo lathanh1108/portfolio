@@ -59,7 +59,9 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      data-component="Hero"
+      data-section="hero"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden hero-section"
     >
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900" />

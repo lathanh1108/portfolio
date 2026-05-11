@@ -38,5 +38,5 @@ export default function AnimatedCounter({
     });
   }, [springValue]);
 
-  return <span ref={ref} className={className} />;
+  return <span ref={ref} data-component="AnimatedCounter" data-testid="animated-counter" data-to={to} className={className} />;
 }

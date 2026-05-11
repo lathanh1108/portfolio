@@ -5,7 +5,7 @@ import { ProjectMetadata } from '@/types';
 export const PROJECTS_METADATA: ProjectMetadata[] = [
   {
     id: 'portfolio-website',
-    image: '/images/projects/portfolio.jpg',
+    image: '/images/projects/portfolio.png',
     technologies: ['Next.js', 'TypeScript', 'Framer Motion', 'Tailwind CSS'],
     githubUrl: 'https://github.com/lathanh1108/portfolio',
     liveUrl: 'https://www.latatthanh.com/',

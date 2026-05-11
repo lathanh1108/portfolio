@@ -26,7 +26,7 @@ export default function LazySection({
 }: LazySectionProps) {
   return (
     <Suspense fallback={fallback}>
-      <div className={className}>
+      <div data-component="LazySection" data-testid="lazy-section" className={className}>
         {children}
       </div>
     </Suspense>

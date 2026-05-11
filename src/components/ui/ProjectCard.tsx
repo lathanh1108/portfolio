@@ -1,10 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Eye } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 import { useTranslations } from '@/contexts/LanguageContext';
 import { Project } from '@/types';
 import { cn } from '@/lib/utils';
+import OptimizedImage from './OptimizedImage';
 
 interface ProjectCardProps {
   project: Project;
@@ -32,19 +33,22 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <motion.div
       variants={cardVariants}
+      data-component="ProjectCard"
+      data-testid={`project-card-${project.id}`}
       className="group bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col"
       whileHover={{ y: -8, scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
     >
       {/* Project Image */}
-      <div className="relative h-48 bg-gray-700 overflow-hidden">
+      <div className="relative h-48 bg-gray-700 overflow-hidden" data-testid="project-image-container">
+        <OptimizedImage
+          src={project.image}
+          alt={project.title}
+          fill
+          className="h-full w-full"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <Eye className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-            <p className="text-gray-400 text-sm">{t('projectImagePlaceholder')}</p>
-          </div>
-        </div>
         
         {/* Overlay on hover */}
         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">

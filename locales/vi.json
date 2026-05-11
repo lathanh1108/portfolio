@@ -3,6 +3,7 @@
     "home": "Trang chủ",
     "about": "Giới thiệu",
     "skills": "Kỹ năng",
+    "experience": "Kinh nghiệm",
     "projects": "Dự án",
     "contact": "Liên hệ"
   },
@@ -15,7 +16,7 @@
   },
   "about": {
     "title": "Về tôi",
-    "description": "Tôi là một lập trình viên Frontend tận tâm với 8 năm kinh nghiệm, chuyên tạo ra các giao diện web hiện đại, hiệu suất cao và dễ bảo trì. Tôi cũng có khoảng 1 năm kinh nghiệm phát triển Back-end với Laravel.",
+    "description": "Tôi là một Frontend Developer với 8 năm kinh nghiệm, tập trung chủ yếu vào việc xây dựng các giao diện web hiện đại, hiệu năng cao và dễ bảo trì. Tôi có nền tảng vững chắc trong lĩnh vực phát triển E-commerce, với hơn 4 năm kinh nghiệm làm việc chuyên sâu với Salesforce SFRA và Shopify. Thế mạnh của tôi bao gồm xây dựng kiến trúc có khả năng mở rộng, tối ưu hiệu năng và mang đến trải nghiệm người dùng mượt mà trên các nền tảng này.",
     "passion": "Tôi đam mê xây dựng các ứng dụng web thân thiện, chất lượng cao. Tôi thích hỗ trợ đồng đội, học hỏi công nghệ mới khi cần thiết và không ngừng cải thiện kỹ năng của mình.",
     "profileAlt": "Ảnh hồ sơ",
     "profileImageHint": "Thêm ảnh hồ sơ của bạn tại:",
@@ -59,6 +60,44 @@
       "portfolio-website": {
         "title": "Trang portfolio cá nhân",
         "description": "Website giới thiệu cá nhân với thiết kế hiện đại, hoạt ảnh mượt mà và hỗ trợ chế độ tối (dark mode)."
+      }
+    }
+  },
+  "experience": {
+    "title": "Kinh Nghiệm Làm Việc",
+    "subtitle": "Các công ty tôi đã có cơ hội làm việc cùng",
+    "current": "Hiện tại",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "fullstack": "Full Stack",
+    "list": {
+      "groove-technology": {
+        "role": "Kỹ Sư Phần Mềm",
+        "h1": "Phát triển và bảo trì các dự án Salesforce SFRA: tính năng mới, sửa lỗi, chỉnh sửa template (ISML, SCSS, JS), tùy chỉnh controller/model/service.",
+        "h2": "Xây dựng storefront Shopify bằng Liquid theme; tạo custom section, template và metafield.",
+        "h3": "Có kinh nghiệm Shopify API/GraphQL, tham gia xây dựng custom app và UI extension.",
+        "h4": "Tham gia code review và viết hướng dẫn phát triển cho nhóm.",
+        "h5": "Đóng góp vào tối ưu hóa hiệu suất website.",
+        "h6": "Phối hợp chặt chẽ với khách hàng để hiểu và đáp ứng yêu cầu nghiệp vụ."
+      },
+      "rivercrane-vietnam": {
+        "role": "Lập Trình Viên Front-end",
+        "h1": "Xây dựng layout, template và form bằng Laravel Blade, xử lý hiển thị lỗi validation.",
+        "h2": "Phát triển component Vue.js tái sử dụng, tích hợp API và hiển thị dữ liệu động.",
+        "h3": "Triển khai form validation và các tính năng UI/animation tương tác.",
+        "h4": "Sử dụng SCSS cùng các thư viện UI như Bootstrap và Vuetify.",
+        "h5": "Tham gia tối ưu hóa hiệu suất: lazy loading và code splitting."
+      },
+      "k-soft": {
+        "role": "Lập Trình Viên Back-end",
+        "h1": "Phát triển hệ thống back-end bằng Laravel, bao gồm thiết kế cơ sở dữ liệu.",
+        "h2": "Xây dựng phần lớn CRUD API phục vụ ứng dụng di động.",
+        "h3": "Triển khai tính năng xác thực/phân quyền và xử lý upload file.",
+        "h4": "Sử dụng queue, scheduler, migration và seed trong Laravel; tối ưu hóa code để dễ bảo trì và cải thiện hiệu suất."
+      },
+      "vias-software": {
+        "role": "Lập Trình Viên Front-end",
+        "h1": "Phát triển giao diện web bằng Vue.js."
       }
     }
   },

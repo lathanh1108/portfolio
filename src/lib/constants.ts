@@ -30,6 +30,7 @@ export const NAVIGATION_ITEMS: Array<{ href: string; label: NavigationKeys }> = 
   { href: '#home', label: 'home' },
   { href: '#about', label: 'about' },
   { href: '#skills', label: 'skills' },
+  { href: '#experience', label: 'experience' },
   { href: '#projects', label: 'projects' },
   { href: '#contact', label: 'contact' }
 ];

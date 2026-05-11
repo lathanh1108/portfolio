@@ -18,7 +18,6 @@ export interface Project extends ProjectMetadata {
 
 export interface Skill {
   name: string;
-  level: number; // 1-5 scale
   category: 'frontend' | 'backend' | 'tools' | 'design';
 }
 
@@ -38,6 +37,7 @@ export interface LocaleContent {
     home: string;
     about: string;
     skills: string;
+    experience: string;
     projects: string;
     contact: string;
   };
@@ -74,7 +74,7 @@ export interface LocaleContent {
 export type Locale = 'en' | 'vi';
 
 // Type for translation keys
-export type NavigationKeys = 'home' | 'about' | 'skills' | 'projects' | 'contact';
+export type NavigationKeys = 'home' | 'about' | 'skills' | 'experience' | 'projects' | 'contact';
 export type HeroKeys = 'greeting' | 'name' | 'title' | 'description' | 'cta';
 export type SectionKeys = 'title' | 'subtitle' | 'description';
 
@@ -97,6 +97,15 @@ declare global {
         title: string;
         description: string;
       }>;
+    };
+    experience: {
+      title: string;
+      subtitle: string;
+      current: string;
+      frontend: string;
+      backend: string;
+      fullstack: string;
+      list: Record<string, Record<string, string>>;
     };
     contact: Record<SectionKeys | 'getInTouch' | 'description' | 'email' | 'phone' | 'location' | 'timezone' | 'emailValue' | 'phoneValue' | 'locationValue' | 'timezoneValue' | 'readyToWork' | 'ctaDescription' | 'startProject' | 'followMe' | 'connect' | 'availability' | 'availabilityStatus' | 'letsCreateSomething' | 'bottomCtaDescription' | 'sendMessage' | 'connectLinkedIn', string>;
     footer: {

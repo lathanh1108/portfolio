@@ -3,12 +3,40 @@
 import { useTranslations } from '@/contexts/LanguageContext';
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
+import Image from 'next/image';
 import { Code, Database, Settings, Palette } from 'lucide-react';
 import { SKILLS_DATA } from '@/lib/skills-data';
-// import { Skill } from '@/types'; // Unused import
 import { cn } from '@/lib/utils';
-import ProgressBar from '../ui/ProgressBar';
-import AnimatedCounter from '../ui/AnimatedCounter';
+
+// Skill icon mapping - SVG files from public folder
+const skillIconMap: Record<string, string> = {
+  'React': '/icons/skills/react.svg',
+  'Next.js': '/icons/skills/nextjs.svg',
+  'TypeScript': '/icons/skills/typescript.svg',
+  'JavaScript': '/icons/skills/javascript.svg',
+  'HTML/CSS': '/icons/skills/html-css.svg',
+  'Tailwind CSS': '/icons/skills/tailwind.svg',
+  'Vue.js': '/icons/skills/vue.svg',
+  'Node.js': '/icons/skills/nodejs.svg',
+  'Express.js': '/icons/skills/expressjs.svg',
+  'PostgreSQL': '/icons/skills/postgresql.svg',
+  'REST APIs': '/icons/skills/rest-apis.svg',
+  'GraphQL': '/icons/skills/graphql.svg',
+  'Git': '/icons/skills/git.svg',
+  'Docker': '/icons/skills/docker.svg',
+  'Vercel': '/icons/skills/vercel.svg',
+  'VS Code': '/icons/skills/vscode.svg',
+  'Webpack': '/icons/skills/webpack.svg',
+  'Jest': '/icons/skills/jest.svg',
+  'Figma': '/icons/skills/figma.svg',
+  'Adobe XD': '/icons/skills/adobe-xd.svg',
+  'Photoshop': '/icons/skills/photoshop.svg',
+  'UI/UX Design': '/icons/skills/ui-ux.svg'
+};
+
+const getSkillIcon = (skillName: string): string | null => {
+  return skillIconMap[skillName] || null;
+};
 
 const categoryConfig = {
   frontend: {
@@ -80,7 +108,9 @@ export default function Skills() {
     <section 
       id="skills" 
       ref={ref}
-      className="py-20 bg-gray-800"
+      data-component="Skills"
+      data-section="skills"
+      className="py-20 bg-gray-800 skills-section"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -130,71 +160,38 @@ export default function Skills() {
 
           {/* Skills Grid */}
           <motion.div variants={itemVariants}>
-            <div className={cn(
-              "rounded-2xl p-8 transition-all duration-300",
-              categoryConfig[activeCategory].bgColor
-            )}>
-              <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                {filteredSkills.map((skill, index) => (
-                  <motion.div
-                    key={skill.name}
-                    className="flex items-center justify-between p-4 bg-gray-900 rounded-xl shadow-sm"
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                  >
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-white mb-2">
+            <div className="skills-grid-container p-8 transition-all duration-300">
+              <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+                {filteredSkills.map((skill, index) => {
+                  const iconPath = getSkillIcon(skill.name);
+                  return (
+                    <motion.div
+                      key={skill.name}
+                      className="skill-item-card flex flex-col items-center justify-center rounded-lg border border-slate-300/70 bg-white/90 p-4 shadow-sm transition-shadow duration-300 hover:shadow-md"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.05 }}
+                    >
+                      {iconPath && (
+                        <div className="flex h-14 w-full items-center justify-center px-3">
+                          <Image 
+                            src={iconPath} 
+                            alt={skill.name}
+                            width={200}
+                            height={56}
+                            sizes="(max-width: 768px) 72px, 96px"
+                            className="h-10 w-auto max-w-full object-contain"
+                            loading="lazy"
+                          />
+                        </div>
+                      )}
+                      <h4 className="text-center text-sm font-medium text-slate-900">
                         {skill.name}
                       </h4>
-                      <ProgressBar 
-                        value={skill.level} 
-                        max={5}
-                        animated={isInView}
-                      />
-                    </div>
-                    <div className="ml-4">
-                      <div className={cn(
-                        "w-12 h-12 rounded-lg flex items-center justify-center text-white bg-gradient-to-r",
-                        categoryConfig[activeCategory].color
-                      )}>
-                        <span className="font-bold text-lg">{skill.level}</span>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
+                    </motion.div>
+                  );
+                })}
               </div>
-            </div>
-          </motion.div>
-
-          {/* Skills Summary */}
-          <motion.div variants={itemVariants} className="text-center">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {categories.map((category) => {
-                const config = categoryConfig[category];
-                const Icon = config.icon;
-                const skillsCount = SKILLS_DATA.filter(skill => skill.category === category).length;
-                
-                return (
-                  <div
-                    key={category}
-                    className="p-6 bg-gray-900 rounded-xl shadow-sm text-center"
-                  >
-                    <div className={cn(
-                      "w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3 bg-gradient-to-r",
-                      config.color
-                    )}>
-                      <Icon className="w-6 h-6 text-white" />
-                    </div>
-                    <h4 className="font-semibold text-white mb-1">
-                      {getCategoryTitle(category)}
-                    </h4>
-                    <p className="text-2xl font-bold text-gray-400">
-                      <AnimatedCounter from={0} to={skillsCount} />
-                    </p>
-                  </div>
-                );
-              })}
             </div>
           </motion.div>
         </motion.div>

@@ -64,7 +64,9 @@ export default function About() {
     <section 
       id="about" 
       ref={ref}
-      className="py-20 bg-gray-900"
+      data-component="About"
+      data-section="about"
+      className="pt-50 pb-20 bg-gray-900 about-section"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -73,14 +75,6 @@ export default function About() {
           animate={isInView ? "visible" : "hidden"}
           className="space-y-16"
         >
-          {/* Section Header */}
-          <motion.div variants={itemVariants} className="text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              {t('title')}
-            </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full" />
-          </motion.div>
-
           {/* Main Content */}
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Text Content */}
@@ -117,7 +111,7 @@ export default function About() {
             {/* Image/Avatar Placeholder */}
             <motion.div 
               variants={itemVariants}
-              className="relative order-first lg:order-last"
+              className="relative order-first lg:order-last flex flex-col items-center"
             >
               <div className="relative mx-auto w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
                 {/* Decorative background */}
@@ -177,6 +171,9 @@ export default function About() {
                   <Palette className="w-6 h-6 text-white" />
                 </motion.div>
               </div>
+              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent mt-8 text-center">
+                Lã Tất Thành
+              </h2>
             </motion.div>
           </div>
 

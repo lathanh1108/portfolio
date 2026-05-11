@@ -43,29 +43,32 @@ export default function Header() {
 
   return (
     <header
+      id="app-header"
+      data-component="Header"
       className={cn(headerBaseClass, isScrolled ? headerScrolledClass : headerDefaultClass)}
     >
       <div className={layoutContainerClass}>
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16" data-testid="header-container">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0" data-testid="header-logo">
             <button
               onClick={() => {
                 scrollToHref('#home');
               }}
               className="text-xl font-bold text-white hover:text-blue-600 transition-colors"
+              data-component="Logo"
             >
               {BRAND_NAME}
             </button>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          <div className="hidden md:block" data-testid="desktop-nav">
             <Navigation />
           </div>
 
           {/* Language Switcher & Mobile Menu Button */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4" data-testid="header-actions">
             <LanguageSwitcher />
             
             {/* Mobile menu button */}
@@ -73,6 +76,8 @@ export default function Header() {
               onClick={toggleMobileMenu}
               className="md:hidden p-2 rounded-lg text-gray-300 hover:bg-gray-800 transition-colors"
               aria-label={t('toggleMobileMenu')}
+              data-testid="mobile-menu-toggle"
+              data-active={isMobileMenuOpen}
             >
               {isMobileMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -85,7 +90,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-700">
+          <div className="md:hidden border-t border-gray-700" data-testid="mobile-nav">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-gray-900">
               <Navigation 
                 isMobile
