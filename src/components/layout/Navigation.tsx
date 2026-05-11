@@ -24,7 +24,7 @@ interface NavigationProps {
 
 export default function Navigation({ className, isMobile = false, onItemClick }: NavigationProps) {
   const t = useTranslations('navigation');
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState(navigationSections[0] ?? 'about');
 
   useEffect(() => {
     const handleScroll = () => {

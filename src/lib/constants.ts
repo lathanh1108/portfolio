@@ -29,8 +29,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 export const NAVIGATION_ITEMS: Array<{ href: string; label: NavigationKeys }> = [
-  { href: '#home', label: 'home' },
-  { href: '#about', label: 'about' },
+  { href: '#about', label: 'home' },
   { href: '#skills', label: 'skills' },
   { href: '#experience', label: 'experience' },
   { href: '#projects', label: 'projects' },

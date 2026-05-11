@@ -53,7 +53,7 @@ export default function Header() {
           <div className="flex-shrink-0" data-testid="header-logo">
             <button
               onClick={() => {
-                scrollToHref('#home');
+                scrollToHref('#about');
               }}
               className="text-xl font-bold text-white hover:text-blue-600 transition-colors"
               data-component="Logo"
